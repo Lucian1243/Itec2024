@@ -12,9 +12,38 @@ if(!isset($_SESSION['name'])){
 //     header("location:denied.php");
 // }
 
+$sql = "SELECT * FROM apps";
+$result = mysqli_query($conn, $sql);
 
 
+$r = mysqli_fetch_array(mysqli_query($conn, $sql));
+if ($result && mysqli_num_rows($result) > 0) {
+    $row = mysqli_fetch_assoc($result);
+    $endpoint1_data = json_decode($row['endpoint1'], true);
+    $endpoint2_data = json_decode($row['endpoint2'], true);
+    $endpoint3_data = json_decode($row['endpoint3'], true);
+    $endpoint4_data = json_decode($row['endpoint4'], true);
+    $endpoint5_data = json_decode($row['endpoint5'], true);
+    $endpoint6_data = json_decode($row['endpoint6'], true);
+    $endpoint7_data = json_decode($row['endpoint7'], true);
+    
+}
 
+$endpoints = array(
+    
+    $app = $r['AppUrl'],
+    $end1= $endpoint1_data['URL'],
+    $end2= $endpoint2_data['URL'],
+    $end3= $endpoint3_data['URL'],
+    $end4= $endpoint4_data['URL'],
+    $end5= $endpoint5_data['URL'],
+    $end6= $endpoint6_data['URL'],
+    $end7= $endpoint7_data['URL'],
+);
+if (!$result) {
+        echo "Error: " . mysqli_error($conn);
+        exit;
+    }
 
 ?>
 <html>
@@ -39,7 +68,6 @@ if(!isset($_SESSION['name'])){
             <div class = "usernameTextLogin"><?php echo $_SESSION['name'] ?></div>
             <div class = "TextLogo">TrioTech</div>
             <div class = "About">About</div>
-            <div class = "Feedback">Feedback</div>
             <!-- <h1>Welcome, <?php echo $_SESSION['name'] ?>!</h1> -->
             <!-- <div class = "AddApplicationText">Add Application</div> -->
         </div>
@@ -49,14 +77,14 @@ if(!isset($_SESSION['name'])){
         </p>
         <div class="AddAplication">
         <img src="images/x.png" class = "closeAddAplication">
-        <form name="form" action="endpoints.php" method="POST">
+        <form name="form" id="Form" action="endpoints.php" method="POST">
                 <hr class="HrAddNameApp">
                 <label for="app" class="NameAplicationText">Numele aplicatiei</label>
                 <input type="text" id="app" name="app" class="InoutNameApplicaiton" placeholder="Aplication Name" required>
              
                 <hr class="HraddUrlApp">
                 <label for="UrlImageApp" class="AddTextUrlApp" >Logo Aplicatie</label>
-                <input type = "text" id ="UrlImageApp" name = "UrlImageApp" class="InoutUrlImage" onkeyup="SetLogoAplicationAdd(this.value);" placeholder=".png/.jpg" required>
+                <input type = "text" id ="UrlImageApp" name = "UrlImageApp" class="InoutUrlImage" onkeyup="SetLogoAplicationAdd(this.value);" placeholder=".png/.jpg">
              
                 <hr class="HrEndPoint1">
                 <label for="end1" class="AddTextEndpointApp1">Endpoint 1</label>
@@ -96,12 +124,11 @@ if(!isset($_SESSION['name'])){
 <!-- asdas -->
   
     <div class = "FrameAplicatiiCreate">
-    <!-- <div id = "SetApps"></div> -->
         <div class="AplicatieStabila">
         <Div class="OvalAplicatii">
            <img src="images/youtube.png"class="LogoAplicationView"> 
         </div>
-        <div class="NameAplicationVrf">Royal Food</div>
+        <div class="NameAplicationVrf">YouTube</div>
         <div class="ButtonStatsApp">Verifica Statusul Aplicatiei</div>
         <div class="FrameStatsAplication">
             <div class="StatsAppText">Statusul aplicatiei</div>
@@ -116,10 +143,60 @@ if(!isset($_SESSION['name'])){
             <div class="StatusAplicatie9"></div>
             <div class="StatusAplicatie10"></div>
             <div class="StatusAplicatie11"></div>    
-            <div class="StatusAplicatie12"></div>  
-            <div class="SetButtonDeleteAplication">Raporteaza Bug</div>
+            <div class="StatusAplicatie12" style="background-color:yellow;"></div>  
+            <div class="SetButtonDeleteAplication" id="reportBug">Rezolva Bug</div>
+            <script>
+        document.getElementById('reportBug').addEventListener('click', function() {
+        document.querySelector('.StatusAplicatie12').style.backgroundColor = 'lime';
+        });
+        </script>
+
+            
+            
+
         </div>
      </div>
+
+
+
+
+     <div class="AplicatieStabila" style="position:absolute;display:blocks">
+        <Div class="OvalAplicatii">
+           <img src="images/youtube.png"class="LogoAplicationView"> 
+        </div>
+        <div class="NameAplicationVrf">YouTube</div>
+        <div class="ButtonStatsApp">Verifica Statusul Aplicatiei</div>
+        <div class="FrameStatsAplication">
+            <div class="StatsAppText">Statusul aplicatiei</div>
+            <div class="StatusAplicatie"></div> 
+            <div class="StatusAplicatie2"></div> 
+            <div class="StatusAplicatie3"></div> 
+            <div class="StatusAplicatie4"></div> 
+            <div class="StatusAplicatie5"></div> 
+            <div class="StatusAplicatie6"></div> 
+            <div class="StatusAplicatie7"></div>
+            <div class="StatusAplicatie8"></div>
+            <div class="StatusAplicatie9"></div>
+            <div class="StatusAplicatie10"></div>
+            <div class="StatusAplicatie11"></div>    
+            <div class="StatusAplicatie12" style="background-color:yellow;"></div>  
+            <div class="SetButtonDeleteAplication" id="reportBug">Rezolva Bug</div>
+            <script>
+        document.getElementById('reportBug').addEventListener('click', function() {
+        document.querySelector('.StatusAplicatie12').style.backgroundColor = 'lime';
+        });
+        </script>
+
+            
+            
+
+        </div>
+     </div>
+     
+     
+
+     
+     
     </div>
 
 
@@ -129,6 +206,6 @@ if(!isset($_SESSION['name'])){
         <div class="VeziAplicatiile" action="statususer.php">Vezi Aplicatiile</div>
         <div class="AdaugaAplicatii" >Adauga Aplicatii</div>
     </div>
-        </body>
+    
 </body>
 </html>

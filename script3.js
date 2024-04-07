@@ -91,3 +91,10 @@ $(document).on('click', '.Feedback', function(event) {
         logoApp.src = value;
       }    
     }
+
+    document.getElementByClass('reportBug').addEventListener('click', function() {
+      document.querySelector('.StatusAplicatie12').style.backgroundColor = 'yellow';
+      window.alert('Hello');
+      
+  });
+    

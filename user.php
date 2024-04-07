@@ -39,7 +39,7 @@ if($_SESSION['usertype']=="developer"){
             <div class = "usernameTextLogin"><?php echo $_SESSION['name'] ?></div>
             <div class = "TextLogo">TrioTech</div>
             <div class = "About">About</div>
-            <div class = "Feedback">Feedback</div>
+
             <!-- <h1>Welcome, <?php echo $_SESSION['name'] ?>!</h1> -->
             <!-- <div class = "AddApplicationText">Add Application</div> -->
         </div>
@@ -65,7 +65,12 @@ if($_SESSION['usertype']=="developer"){
             <div class="StatusAplicatie10"></div>
             <div class="StatusAplicatie11"></div>    
             <div class="StatusAplicatie12"></div>  
-            <div class="SetButtonDeleteAplication">Raporteaza Bug</div>
+            <div class="SetButtonDeleteAplication" id="reportBug">Raporteaza Bug</div>
+            <script>
+        document.getElementById('reportBug').addEventListener('click', function() {
+        document.querySelector('.StatusAplicatie12').style.backgroundColor = 'yellow';
+        });
+        </script>
         </div>
      </div>
     </div>

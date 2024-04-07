@@ -36,7 +36,7 @@ include("Connection.php");
             <hr class="HrLog">
             <div class = "LogIn">Log In</div>
             <div class = "SignUp">Sign Up</div>
-            <div class = "Feedback">Feedback</div>
+
             <div class = "About">About</div>
         </div>
         <div class = "VerificareStatus">Verificare Status</div>
@@ -54,12 +54,7 @@ include("Connection.php");
                 <input type ="password" id="pass" name="pass" class = "InputPassword" placeholder = "******" required>
                 <input type="submit" id="btn" value="Login" name="login" class = "ButtonLogin">
             </form>
-            <hr class="HRsau1">
-            <div class="TxTSau">SAU</div>
-            <hr class="HRsau2">
-            <div class="LoginGoogle">Sign with Google</div>
-            <img src="images/google.png" class = "GoogleLogIn">
-            <img src="images/x.png" class = "closeLogIn">
+         
         </div>
 
         <div class = "TabelSignUp">
@@ -80,12 +75,8 @@ include("Connection.php");
             </form>
 
             
-            <hr class="HRsau1">
-            <div class="TxTSau">SAU</div>
-            <hr class="HRsau2">
-            <div class="LoginGoogle">Sign Up with Google</div>
-            <img src="images/google.png" class = "GoogleLogIn">
-            <img src="images/x.png" class = "closeSignUp">
+
+            
             <div class="HaveAccount">Already have an account?</div>
         </div>
         <div class="AddAplication">
