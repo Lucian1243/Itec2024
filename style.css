@@ -1,0 +1,814 @@
+body{
+background-image: url("images/bkImage.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 0.9;
+}
+.bkiamge{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:-1px;
+    left:-1px;
+    opacity: 0.8;
+    background-color: black;
+    background-size: cover;
+}
+.bardirection{
+    position: absolute;
+    background-color:black;
+    width: 85%;
+    height:10%;
+    left:6vw;
+    border: 1px solid grey;
+    border-radius:50px;
+
+}
+.LogoBar{
+        position: absolute;
+        top:0.3vw;
+        left:1vw;
+        width: 3vw;
+        height: 3.7vw;
+}
+.TextLogo{
+    position: absolute;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    top:1.4vw;
+    left:4vw;
+}  
+
+
+.LogIn{
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3vw;
+    
+    top:1.3vw;
+    right:12vw; 
+}
+.LogIn:hover{
+    border-radius:20px;
+    font-size: 1.2vw;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.SignUp{
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3vw;
+    
+    top:1.3vw;
+    right:4vw; 
+}
+.SignUp:hover{
+    border-radius:20px;
+    font-size: 1.2vw;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
+.VerificareStatus{
+    position: absolute;
+    font-size: 3vw;
+    color: white;
+    font-weight: bold;
+    top:10vw;
+    left:6vw;
+
+}
+.ParagrafHomePage{
+    position: absolute;
+    font-size: 1.6vw;
+    /* background-color: red; */
+    color:white;
+    top:15vw;
+    left:6vw;
+    width:70vw;
+}
+.Feedback{
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3vw;
+    
+    top:1.3vw;
+    left:19vw; 
+}
+.Feedback:hover{
+    border-radius:20px;
+    font-size: 1.2vw;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
+.HrLog{
+    position: absolute;
+    width: 4.5vw;
+    top:1.7vw;
+    right:18vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+.About{
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3vw;
+    top:1.3vw;
+    left:14vw;  
+}
+.About:hover{
+    border-radius:20px;
+    font-size: 1.2vw;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.AddApplicationText{
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3vw;
+    top:1.3vw;
+    left:21vw;   
+}
+.AddApplicationText:hover{
+    border-radius:20px;
+    font-size: 1.2vw;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
+.TabelLogin{
+    position:absolute;
+    display: none;
+    width:50vw;
+    height:38vw;
+    top:6vw;
+    left:25vw;
+    background-color: #09131B;
+}
+
+.Image1Login{
+    position: absolute;
+    height: 38vw;
+    width:24vw;
+}
+.Image2Login{
+    position: absolute;
+    height: 25vw;
+    width: 15vw;
+    top:5vw;
+    left:4.5vw;
+}
+
+.usernamemail{
+    position: absolute;
+    color: white;
+    top:13vw;
+    left:27vw;
+
+}
+.InputMailUSr{
+    position: absolute;
+    width: 20vw;
+    left:27vw;
+    top:15vw;
+    color:white;
+    background-color:rgb(34, 16, 137) ;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+
+}
+
+.InputMailUSr::placeholder{
+background-color:rgb(34, 16, 137) ;
+
+}
+
+.Password{
+    position: absolute;
+    color:white;
+    top: 17vw;
+    left: 27vw;
+}
+.InputPassword{
+    position: absolute;
+    width: 20vw;
+    left: 27vw;
+    top: 19vw;
+    color:white;
+    background-color: rgb(34, 16, 137);
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.InputPassword::placeholder{
+    position: absolute;
+    background-color: rgb(34, 16, 137);
+    top:4px;
+}
+
+.LogInText{
+    position: absolute;
+    color:white;
+    top:5vw;
+    left:27vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:3.5vw;
+}
+.ButtonLogin{
+    position:absolute;
+    top:23vw;
+    background: linear-gradient(264deg, rgba(0,212,255,1) 0%, rgba(64,157,176,1) 52%, rgba(0,212,255,1) 98%, rgba(255,255,255,1) 100%);
+    left:27vw;
+    width:20vw;
+    height: 2vw;
+    border-radius:10px;
+    cursor: pointer;
+}
+.HRsau1{
+    position: absolute;
+    border:1px solid grey;
+    width:9vw;
+    left:25vw;
+    top:27vw;
+}
+.HRsau2{
+    position: absolute;
+    border:1px solid grey;
+    width:9vw;
+    left:40vw;
+    top:27vw;
+}
+.TxTSau{
+    position:absolute;
+    top:27vw;
+    left:36vw;
+    color:grey
+
+}
+
+.LoginGoogle{
+    position: absolute;
+    top:30vw;
+    left:28vw;
+    color:darkblue;
+    background-color: white;
+    border:1px solid;
+    
+    /* text-align: center; */
+    /* padding:12px 12px 0px 0px; */
+    /* padding-top: 10px; */
+    border-radius: 10px;
+    border-left: 100px solid white;
+    border-right: 80px solid white;
+    border-top:12px solid white;
+    border-bottom: 12px solid white;
+    /* margin-bottom: 12    px; */
+    
+
+}
+
+.GoogleLogIn{
+    position: absolute;
+    top:30.3vw;
+    left:31vw;
+    width:2vw;
+    height:2vw;
+
+}
+
+.closeLogIn{
+    position: absolute;
+    top:0.5vw;
+    left:45.3vw;
+}
+.closeLogIn:hover{
+    border-radius:20px;
+    font-size: 1.2vw;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.TabelSignUp{
+    position:absolute;
+    display: none;
+    width:50vw;
+    height:38vw;
+    top:6vw;
+    left:25vw;
+    background-color: #09131B;
+}
+
+.SignUpText{
+    position: absolute;
+    color:white;
+    top:1vw;
+    left:27vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:3.5vw;
+}
+.usernameSignUp{
+    position: absolute;
+    color: white;
+    top:6.5vw;
+    left:27vw;
+
+}
+
+.inputusername{
+    position: absolute;
+    width: 20vw;
+    left:27vw;
+    top:8vw;
+    color:white;
+    background-color:rgb(34, 16, 137) ;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+
+}
+
+.inputusername::placeholder{
+  
+background-color:rgb(34, 16, 137) ;
+
+}
+.usernamemailSignUp{
+    position: absolute;
+    color: white;
+    top:10vw;
+    left:27vw;
+
+}
+
+.InputMailUSrSignUp{
+    position: absolute;
+    width: 20vw;
+    left:27vw;
+    top:12vw;
+    color:white;
+    background-color:rgb(34, 16, 137) ;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+
+}
+
+.InputMailUSrSignUp::placeholder{
+background-color:rgb(34, 16, 137) ;
+
+}
+
+.PasswordSignUp{
+    position: absolute;
+    color:white;
+    top: 14vw;
+    left: 27vw;
+}
+.InputPasswordSignUp{
+    position: absolute;
+    width: 20vw;
+    left: 27vw;
+    top: 16vw;
+    color:white;
+    background-color: rgb(34, 16, 137);
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.InputPasswordSignUp::placeholder{
+    position: absolute;
+    background-color: rgb(34, 16, 137);
+    top:4px;
+}
+.ButtonSignUp{
+    position:absolute;
+    top:23vw;
+    background: linear-gradient(264deg, rgba(0,212,255,1) 0%, rgba(64,157,176,1) 52%, rgba(0,212,255,1) 98%, rgba(255,255,255,1) 100%);
+    left:27vw;
+    width:20vw;
+    height: 2vw;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.PasswordRepeatSignUp{
+    position: absolute;
+    color:white;
+    top: 18vw;
+    left: 27vw;
+}
+.InputRepeatPasswordSignUp{
+    position: absolute;
+    width: 20vw;
+    left: 27vw;
+    top: 20vw;
+    color:white;
+    background-color: rgb(34, 16, 137);
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.InputRepeatPasswordSignUp::placeholder{
+    position: absolute;
+    background-color: rgb(34, 16, 137);
+    top:4px;
+}
+.closeSignUp{
+    position: absolute;
+    top:0.5vw;
+    left:45.3vw;
+}
+.closeSignUp:hover{
+    border-radius:20px;
+    font-size: 1.2vw;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
+.HaveAccount{
+    position: absolute;
+    color:white;
+    left: 32vw;
+    top: 25.5vw;
+}
+.HaveAccount:hover{
+    /* border-radius:20px; */
+    font-size: 1.2vw;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.AddAplication{
+    position: absolute;
+    display: none;
+    width:50vw;
+    height:38vw;
+    top:6vw;
+    left:22vw;
+    /* opacity: 0.9; */
+    background-color: black;
+    border:2px solid blue
+
+}
+
+.AdaugaAplicatiaText{
+    position: absolute;
+    font-size: 3vw;
+    left:15vw;
+    color:white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.InoutNameApplicaiton{
+    position: absolute;
+    width: 15vw;
+    left: 20vw;
+    top: 10vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.InoutNameApplicaiton::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.NameAplicationText{
+    position: absolute;
+    font-size: 1vw;
+    left:21vw;
+    top:8.3vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrAddNameApp{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:8.4vw;
+    left:20vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+.LipsaLogoAddApp{
+    position: absolute;
+    width:10vw;
+    height:10vw;
+    border-radius: 10px;
+    top:8.5vw;
+    left:9vw;
+}
+
+.InoutUrlImage{
+    position: absolute;
+    width: 15vw;
+    left: 20vw;
+    top: 13.5vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.InoutNameApplicaiton::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextUrlApp{
+    position: absolute;
+    font-size: 1vw;
+    left:21vw;
+    top:12.0vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HraddUrlApp{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:12.0vw;
+    left:20vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+
+.AddEndPoint1{
+    position: absolute;
+    width: 15vw;
+    left: 20vw;
+    top: 17.0vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint1::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp1{
+    position: absolute;
+    font-size: 1vw;
+    left:21vw;
+    top:15.5vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint1{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:15.5vw;
+    left:20vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+.AddEndPoint2{
+    position: absolute;
+    width: 15vw;
+    left: 7vw;
+    top: 21.0vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint2::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp2{
+    position: absolute;
+    font-size: 1vw;
+    left:8.0vw;
+    top:19.5vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint2{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:19.5vw;
+    left:7vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+.AddEndPoint3{
+    position: absolute;
+    width: 15vw;
+    left: 25vw;
+    top: 21.0vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint3::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp3{
+    position: absolute;
+    font-size: 1vw;
+    left:26.0vw;
+    top:19.5vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint3{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:19.5vw;
+    left:25vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+
+.AddEndPoint4{
+    position: absolute;
+    width: 15vw;
+    left: 7vw;
+    top: 24.5vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint4::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp4{
+    position: absolute;
+    font-size: 1vw;
+    left:8.0vw;
+    top:23.0vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint4{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:23.0vw;
+    left:7vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+
+.AddEndPoint5{
+    position: absolute;
+    width: 15vw;
+    left: 25vw;
+    top: 24.5vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint5::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp5{
+    position: absolute;
+    font-size: 1vw;
+    left:26.0vw;
+    top:23.0vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint5{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:23.0vw;
+    left:25vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+.AddEndPoint6{
+    position: absolute;
+    width: 15vw;
+    left: 7vw;
+    top: 28.0vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint6::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp6{
+    position: absolute;
+    font-size: 1vw;
+    left:8.0vw;
+    top:26.5vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint6{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:26.5vw;
+    left:7vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+.AddEndPoint7{
+    position: absolute;
+    width: 15vw;
+    left: 25vw;
+    top: 28.0vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint7::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp7{
+    position: absolute;
+    font-size: 1vw;
+    left:26.0vw;
+    top:26.5vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint7{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:26.5vw;
+    left:25vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+.ButtonAddAplication{
+    position:absolute;
+    top:33vw;
+    color: white;
+    background: linear-gradient(264deg, #2E50A6 0%, rgba(64,157,176,1) 52%, #2E50A6 98%);
+    left:14vw;
+    width:20vw;
+    height: 2vw;
+    border-radius:10px;
+    cursor: pointer;
+}
+.ButtonAddAplication:hover{
+    top:33.2vw;
+    cursor: pointer;
+}
+

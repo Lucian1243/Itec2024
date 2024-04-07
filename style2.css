@@ -1,0 +1,818 @@
+body{
+background-image: url("images/bkImage.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 0.9;
+}
+.bkiamge{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:-1px;
+    left:-1px;
+    opacity: 0.8;
+    background-color: black;
+    background-size: cover;
+}
+.bardirection2{
+    position: absolute;
+    background-color:black;
+    width: 95%;
+    height:10%;
+    left:2vw;
+    border: 1px solid grey;
+    border-radius:50px;
+
+}
+.LogoBar{
+        position: absolute;
+        top:0.3vw;
+        left:20vw;
+        width: 3vw;
+        height: 3.7vw;
+}
+.TextLogo{
+    position: absolute;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    top:1.4vw;
+    left:23vw;
+}  
+.AvatarLogo{
+    position: absolute;
+    top:10px;
+    left:20px;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+
+}
+
+.ButtonMenu{
+    position: absolute;
+    top:7px;
+    right:3vw;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border:3px solid grey;
+    border-radius: 50%;
+
+}
+.ButtonMenu:hover{
+    cursor: pointer;
+    border:4px solid white;
+}
+
+.VerificareStatus{
+    position: absolute;
+    font-size: 3vw;
+    color: white;
+    font-weight: bold;
+    top:10vw;
+    left:6vw;
+
+}
+.ParagrafHomePage{
+    position: absolute;
+    font-size: 1.6vw;
+    color:white;
+    top:15vw;
+    left:6vw;
+    width:70vw;
+}
+.Feedback{
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3vw;
+    
+    top:1.3vw;
+    left:45vw; 
+}
+.Feedback:hover{
+    border-radius:20px;
+    font-size: 1.2vw;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
+/* .HrLog{
+    position: absolute;
+    width: 4.5vw;
+    top:1.7vw;
+    right:18vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+} */
+.About{
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3vw;
+    top:1.3vw;
+    left:37vw;  
+}
+.About:hover{
+    border-radius:20px;
+    font-size: 1.2vw;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.AddApplicationText{
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3vw;
+    top:1.3vw;
+    left:33vw;   
+}
+.AddApplicationText:hover{
+    border-radius:20px;
+    font-size: 1.2vw;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.AddAplication{
+    position: absolute;
+    display: none;
+    width:50vw;
+    height:38vw;
+    top:6vw;
+    left:22vw;
+    background-color: black;
+    border:2px solid blue
+
+}
+
+.AdaugaAplicatiaText{
+    position: absolute;
+    font-size: 3vw;
+    left:15vw;
+    color:white;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.InoutNameApplicaiton{
+    position: absolute;
+    width: 15vw;
+    left: 20vw;
+    top: 10vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.InoutNameApplicaiton::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.NameAplicationText{
+    position: absolute;
+    font-size: 1vw;
+    left:21vw;
+    top:8.3vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrAddNameApp{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:8.4vw;
+    left:20vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+.LipsaLogoAddApp{
+    position: absolute;
+    width:10vw;
+    height:10vw;
+    border-radius: 10px;
+    top:8.5vw;
+    left:9vw;
+}
+
+.InoutUrlImage{
+    position: absolute;
+    width: 15vw;
+    left: 20vw;
+    top: 13.5vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.InoutNameApplicaiton::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextUrlApp{
+    position: absolute;
+    font-size: 1vw;
+    left:21vw;
+    top:12.0vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HraddUrlApp{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:12.0vw;
+    left:20vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+
+.AddEndPoint1{
+    position: absolute;
+    width: 15vw;
+    left: 20vw;
+    top: 17.0vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint1::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp1{
+    position: absolute;
+    font-size: 1vw;
+    left:21vw;
+    top:15.5vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint1{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:15.5vw;
+    left:20vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+.AddEndPoint2{
+    position: absolute;
+    width: 15vw;
+    left: 7vw;
+    top: 21.0vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint2::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp2{
+    position: absolute;
+    font-size: 1vw;
+    left:8.0vw;
+    top:19.5vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint2{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:19.5vw;
+    left:7vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+.AddEndPoint3{
+    position: absolute;
+    width: 15vw;
+    left: 25vw;
+    top: 21.0vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint3::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp3{
+    position: absolute;
+    font-size: 1vw;
+    left:26.0vw;
+    top:19.5vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint3{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:19.5vw;
+    left:25vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+
+.AddEndPoint4{
+    position: absolute;
+    width: 15vw;
+    left: 7vw;
+    top: 24.5vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint4::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp4{
+    position: absolute;
+    font-size: 1vw;
+    left:8.0vw;
+    top:23.0vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint4{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:23.0vw;
+    left:7vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+
+.AddEndPoint5{
+    position: absolute;
+    width: 15vw;
+    left: 25vw;
+    top: 24.5vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint5::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp5{
+    position: absolute;
+    font-size: 1vw;
+    left:26.0vw;
+    top:23.0vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint5{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:23.0vw;
+    left:25vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+.AddEndPoint6{
+    position: absolute;
+    width: 15vw;
+    left: 7vw;
+    top: 28.0vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint6::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp6{
+    position: absolute;
+    font-size: 1vw;
+    left:8.0vw;
+    top:26.5vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint6{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:26.5vw;
+    left:7vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+.AddEndPoint7{
+    position: absolute;
+    width: 15vw;
+    left: 25vw;
+    top: 28.0vw;
+    color:white;
+    background-color: #122433;
+    border: 3px solid rgb(42, 34, 34);
+    border-radius: 10px;
+}
+
+.AddEndPoint7::placeholder{
+    position: absolute;
+    background-color: #122433;
+    top:2px;
+}
+.AddTextEndpointApp7{
+    position: absolute;
+    font-size: 1vw;
+    left:26.0vw;
+    top:26.5vw;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.HrEndPoint7{
+    position: absolute;
+    width: 1.0vw;
+    border:1px solid #47BBFF;
+    top:26.5vw;
+    left:25vw;
+    opacity: 0.4;
+    transform:rotate(90deg);
+}
+
+.ButtonAddAplication{
+    position:absolute;
+    top:33vw;
+    color: white;
+    background: linear-gradient(264deg, #2E50A6 0%, rgba(64,157,176,1) 52%, #2E50A6 98%);
+    left:14vw;
+    width:20vw;
+    height: 2vw;
+    border-radius:10px;
+    cursor: pointer;
+}
+.ButtonAddAplication:hover{
+    top:33.2vw;
+    cursor: pointer;
+}
+
+.ShowMenuUser{
+    position: absolute;
+    display: none;
+    width:10vw;
+    height:20vw;
+    right:3vw;
+    top:7vw;
+    opacity: 0.7;
+    border:3px solid grey;
+    border-radius: 10px;
+    background-color: black;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name:animButtonMenu;
+    animation-name: animButtonMenu;
+}
+@keyframes animButtonMenu{
+
+0%{opacity:0;}
+100%{opacity:1;}
+}
+.SignOut{
+    color:white;
+    width: 8vw;
+    height:1.5vw;
+    border-radius: 4px;
+    border:1px solid grey;
+    position: absolute;
+    background-color: black;
+    background-size:cover;
+    text-align: center;
+    top:2vw;
+    left:1vw;
+}
+.SignOut:hover{
+    border-radius: 4px;
+    border:2px solid white;
+    cursor: pointer;
+
+}
+.VeziAplicatiile{
+    color:white;
+    width: 8vw;
+    height:1.5vw;
+    border-radius: 4px;
+    border:1px solid grey;
+    position: absolute;
+    background-color: black;
+    background-size:cover;
+    text-align: center;
+    top:5vw;
+    left:1vw;
+}
+.VeziAplicatiile:hover{
+    border-radius: 4px;
+    border:2px solid white;
+    cursor: pointer;
+
+}
+.AdaugaAplicatii{
+    color:white;
+    width: 8vw;
+    height:1.5vw;
+    border-radius: 4px;
+    border:1px solid grey;
+    position: absolute;
+    background-color: black;
+    background-size:cover;
+    text-align: center;
+    top:8vw;
+    left:1vw;
+}
+.AdaugaAplicatii:hover{
+    border-radius: 4px;
+    border:2px solid white;
+    cursor: pointer;
+
+}
+
+.usernameTextLogin{
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3vw;
+    
+    top:1.3vw;
+    left:5vw; 
+}
+
+.closeAddAplication{
+    position: absolute;
+    top:0.5vw;
+    left:45.3vw;
+}
+.closeAddAplication:hover{
+    border-radius:20px;
+    font-size: 1.2vw;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* VIZUALIZARE APLICATII */
+.FrameAplicatiiCreate{
+    position: absolute;
+    top:7vw;
+    left:5vw;
+    display: none;
+    /* opacity: 0.8; */
+    /* background-color: red; */
+    width:90vw;
+    height:38vw;
+}
+.AplicatieStabila{
+    position: absolute;
+    top:2vw;
+    left:2vw;
+    display: none;
+    /* opacity: 0.9; */
+    background-color: black;
+    width: 20vw;
+    height: 17vw;
+    border-radius: 10px;
+}
+.OvalAplicatii{
+    position: absolute;
+    border:6px solid green;
+    top:1.0vw;
+    left:5.0vw;
+    vertical-align: middle;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+}
+.LogoAplicationView{
+    position: absolute;
+    top:3vw;
+    left:2vw;
+    width:4vw;
+    height: 2vw;
+    opacity: 0.9;
+}
+.NameAplicationVrf{
+    position: absolute;
+    color:white;
+    top:12vw;
+    left:7.3vw;
+    opacity: 0.8;
+    font-size: 1vw;
+}
+
+.ButtonStatsApp{
+    position:absolute;
+    text-align: center;
+    top:14vw;
+    color: white;
+    background: linear-gradient(264deg, #2E50A6 0%, rgba(64,157,176,1) 52%, #2E50A6 98%);
+    left:3vw;
+    width:14vw;
+    height: 2vw;
+    border-radius:10px;
+    cursor: pointer;
+}
+.ButtonStatsApp:hover{
+    top:14.2vw;
+    cursor: pointer;
+}
+.FrameStatsAplication{
+    position: absolute;
+    display: none;
+    background-color: black;
+    opacity: 0.9;
+    width:13vw;
+    height: 15vw;
+    top:1vw;
+    left:19vw;
+    border-radius: 10px;
+}
+.StatsAppText{
+    position: absolute;
+    color:white;
+    top:1vw;
+    left:2vw;
+    font-size:1vw;
+}
+.StatusAplicatie{
+    position: absolute;
+    background-color: lime;
+    width:0.4vw;
+    height: 1vw;
+    border-radius: 5px;
+    left:2vw;
+    top:3vw;
+}
+.StatusAplicatie2{
+    position: absolute;
+    background-color: lime;
+    width:0.4vw;
+    height: 1vw;
+    left:2.6vw;
+    top:3vw;
+    border-radius: 5px;
+}
+.StatusAplicatie3{
+    position: absolute;
+    background-color: lime;
+    width:0.4vw;
+    height: 1vw;
+    left:3.2vw;
+    top:3vw;
+    border-radius: 5px;
+}
+.StatusAplicatie4{
+    position: absolute;
+    background-color: lime;
+    width:0.4vw;
+    height: 1vw;
+    left:3.8vw;
+    top:3vw;
+    border-radius: 5px;
+}
+.StatusAplicatie5{
+    position: absolute;
+    background-color: lime;
+    width:0.4vw;
+    height: 1vw;
+    left:4.4vw;
+    top:3vw;
+    border-radius: 5px;
+}
+.StatusAplicatie6{
+    position: absolute;
+    background-color: lime;
+    width:0.4vw;
+    height: 1vw;
+    left:5.0vw;
+    top:3vw;
+    border-radius: 5px;
+}
+.StatusAplicatie7{
+    position: absolute;
+    background-color: lime;
+    width:0.4vw;
+    height: 1vw;
+    left:5.6vw;
+    top:3vw;
+    border-radius: 5px;
+}
+.StatusAplicatie8{
+    position: absolute;
+    background-color: lime;
+    width:0.4vw;
+    height: 1vw;
+    left:6.2vw;
+    top:3vw;
+    border-radius: 5px;
+}
+.StatusAplicatie9{
+    position: absolute;
+    background-color: lime;
+    width:0.4vw;
+    height: 1vw;
+    left:6.8vw;
+    top:3vw;
+    border-radius: 5px;
+}
+.StatusAplicatie10{
+    position: absolute;
+    background-color: lime;
+    width:0.4vw;
+    height: 1vw;
+    left:7.4vw;
+    top:3vw;
+    border-radius: 5px;
+}
+.StatusAplicatie11{
+    position: absolute;
+    background-color: lime;
+    width:0.4vw;
+    height: 1vw;
+    left:8.0vw;
+    top:3vw;
+    border-radius: 5px;
+}
+.StatusAplicatie12{
+    position: absolute;
+    background-color: lime;
+    width:0.4vw;
+    height: 1vw;
+    left:8.6vw;
+    top:3vw;
+    border-radius: 5px;
+}
+
+.SetButtonDeleteAplication{
+    position:absolute;
+    text-align: center;
+    top:13vw;
+    color: white;
+    background: linear-gradient(264deg, #d30303 0%, rgb(206, 19, 19) 52%, #d30303 98%);
+    left:3vw;
+    width:8vw;
+    height: 1.3vw;
+    border-radius:10px;
+    cursor: pointer;
+}
+.SetButtonDeleteAplication:hover{
+    border-radius:20px;
+    font-size: 1.2vw;
+    padding-left: 1px;
+    cursor: pointer;
+    opacity: 1;
+}
